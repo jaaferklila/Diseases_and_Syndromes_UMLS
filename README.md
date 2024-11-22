@@ -15,9 +15,9 @@ This repository focuses on extracting and analyzing **diseases and syndromes** f
 
 ### 📊 **Final Outputs**:
 - **Filtered Relationships**:
-  - 📝 `filtered_relationships.csv`: Contains relationships specifically for diseases and syndromes.
+  - 📝 `cui_name_def_source_english.csv`: Contains cui name and defintion for diseases and syndromes.
 - **Enriched Relationships**:
-  - 📝 `enriched_relationships.csv`: Includes concepts relationships.
+  - 📝 `filtered_relationships_with_rel_descriptions.csv`: Includes concepts relationships.
 
 ---
 
