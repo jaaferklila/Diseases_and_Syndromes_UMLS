@@ -30,39 +30,27 @@ This file contains filtered definitions for diseases and syndromes from the UMLS
 - **Name**: Name of the disease or syndrome.
 - **Definition**: Description or definition of the disease/syndrome.
 - **Source**: Source of the definition (e.g., `MSH`, `CSP`).
-
+> **Note**: This is a subset of the complete file. For more details, refer to the full dataset.
 
 
 - **Filtered Relationships**:
   - 📝 `filtered_relationships_with_rel_descriptions.csv`: This file includes filtered relationships between medical concepts.
 ## 📄 **filtered_relationships_with_rel_descriptions.csv**
 
-This file includes filtered relationships between medical concepts, with details about the relationships. Below is a sample of the file's content:
+This file includes filtered relationships between medical concepts. Below is a sample of the file's content, focusing on the key columns:
 
-| **CUI1**    | **AUI1**    | **STYPE1** | **REL**                   | **CUI2**    | **AUI2**    | **STYPE2** | **RELA** | **RUI**      | **SRUI** | **SAB** | **SL** | **RG** | **DIR** | **SUPPRESS** | **CVF** |
-|-------------|-------------|------------|---------------------------|-------------|-------------|------------|----------|--------------|----------|---------|--------|---------|-------------|--------|
-| C0000744    | A0017771    | SDUI       | Has parent relationship   | C0020597    | A10900707   | SDUI       | NaN      | R71362968    | NaN      | MSH     | MSH    | NaN     | NaN      | N           | NaN    |
-| C0000744    | A0472584    | AUI        | Has parent relationship   | C0268197    | A1192421    | AUI        | NaN      | R05670678    | NaN      | CSP     | CSP    | NaN     | NaN      | N           | NaN    |
+| **CUI1**    | **REL**                   | **CUI2**    |
+|-------------|---------------------------|-------------|
+| C0000744    | Has parent relationship   | C0020597    |
+| C0000744    | Has parent relationship   | C0268197    |
 
 ### **Columns Description**
-- **CUI1**: Concept Unique Identifier for the first entity.
-- **AUI1**: Atom Unique Identifier for the first entity.
-- **STYPE1**: Semantic type of the first entity.
+- **CUI1**: Concept Unique Identifier for the source concept.
 - **REL**: Relationship type (e.g., "Has parent relationship").
-- **CUI2**: Concept Unique Identifier for the second entity.
-- **AUI2**: Atom Unique Identifier for the second entity.
-- **STYPE2**: Semantic type of the second entity.
-- **RELA**: Relationship attribute (if available).
-- **RUI**: Relationship Unique Identifier.
-- **SRUI**: Semantic Relationship Unique Identifier (if applicable).
-- **SAB**: Source abbreviation.
-- **SL**: Source label.
-- **RG**: Relationship group (if applicable).
-- **DIR**: Direction of the relationship (if applicable).
-- **SUPPRESS**: Suppression flag.
-- **CVF**: Content view flag.
+- **CUI2**: Concept Unique Identifier for the target concept.
 
-> **Note**: This is a sample from the file. The full dataset contains more relationships for various medical concepts.
+> **Note**: This is a simplified sample from the file. The complete dataset includes additional relationships and details.
+
 
 ---
 
