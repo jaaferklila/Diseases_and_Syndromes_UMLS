@@ -10,14 +10,59 @@ This repository focuses on extracting and analyzing **diseases and syndromes** f
 ### 🗂 **Code Location**:
 - The main code for this project can be found in the file:
   - 📄 `diseases-and-syndromes-umls.ipynb`
-- You can also access the full project on Kaggle [Here]([https://kaggle.com](https://www.kaggle.com/code/klilajaafer/diseases-and-syndromes-umls)]), where the **UMLS dataset** is pre-uploaded.  
+- You can also access the full project on Kaggle [Here](https://kaggle.com](https://www.kaggle.com/code/klilajaafer/diseases-and-syndromes-umls), where the **UMLS dataset** is pre-uploaded.  
   **(No need to download it again!)**
 
 ### 📊 **Final Outputs**:
+- **Filtered defintion for diseases and syndromes **:
+  - 📝 `cui_name_def_source_english.csv`: This file contains the name and definition for diseases and syndromes extracted from the UMLS dataset.
+    ## 📄 **cui_name_def_source_english.csv**
+
+This file contains filtered definitions for diseases and syndromes from the UMLS dataset. Below is a sample of the file's content:
+
+| **CUI**     | **Name**                | **Definition**                                                                 | **Source** |
+|-------------|--------------------------|--------------------------------------------------------------------------------|------------|
+| C0000744    | Abetalipoproteinemia     | An autosomal recessive disorder of lipid metabolism.                           | MSH        |
+| C0000744    | Abetalipoproteinemia     | Disorder of lipid metabolism inherited as an autosomal recessive trait.        | CSP        |
+
+### **Columns Description**
+- **CUI**: Concept Unique Identifier for the medical term.
+- **Name**: Name of the disease or syndrome.
+- **Definition**: Description or definition of the disease/syndrome.
+- **Source**: Source of the definition (e.g., `MSH`, `CSP`).
+
+
+
 - **Filtered Relationships**:
-  - 📝 `cui_name_def_source_english.csv`: Contains cui name and defintion for diseases and syndromes.
-- **Enriched Relationships**:
-  - 📝 `filtered_relationships_with_rel_descriptions.csv`: Includes concepts relationships.
+  - 📝 `filtered_relationships_with_rel_descriptions.csv`: This file includes filtered relationships between medical concepts.
+## 📄 **filtered_relationships_with_rel_descriptions.csv**
+
+This file includes filtered relationships between medical concepts, with details about the relationships. Below is a sample of the file's content:
+
+| **CUI1**    | **AUI1**    | **STYPE1** | **REL**                   | **CUI2**    | **AUI2**    | **STYPE2** | **RELA** | **RUI**      | **SRUI** | **SAB** | **SL** | **RG** | **DIR** | **SUPPRESS** | **CVF** |
+|-------------|-------------|------------|---------------------------|-------------|-------------|------------|----------|--------------|----------|---------|--------|---------|-------------|--------|
+| C0000744    | A0017771    | SDUI       | Has parent relationship   | C0020597    | A10900707   | SDUI       | NaN      | R71362968    | NaN      | MSH     | MSH    | NaN     | NaN      | N           | NaN    |
+| C0000744    | A0472584    | AUI        | Has parent relationship   | C0268197    | A1192421    | AUI        | NaN      | R05670678    | NaN      | CSP     | CSP    | NaN     | NaN      | N           | NaN    |
+
+### **Columns Description**
+- **CUI1**: Concept Unique Identifier for the first entity.
+- **AUI1**: Atom Unique Identifier for the first entity.
+- **STYPE1**: Semantic type of the first entity.
+- **REL**: Relationship type (e.g., "Has parent relationship").
+- **CUI2**: Concept Unique Identifier for the second entity.
+- **AUI2**: Atom Unique Identifier for the second entity.
+- **STYPE2**: Semantic type of the second entity.
+- **RELA**: Relationship attribute (if available).
+- **RUI**: Relationship Unique Identifier.
+- **SRUI**: Semantic Relationship Unique Identifier (if applicable).
+- **SAB**: Source abbreviation.
+- **SL**: Source label.
+- **RG**: Relationship group (if applicable).
+- **DIR**: Direction of the relationship (if applicable).
+- **SUPPRESS**: Suppression flag.
+- **CVF**: Content view flag.
+
+> **Note**: This is a sample from the file. The full dataset contains more relationships for various medical concepts.
 
 ---
 
