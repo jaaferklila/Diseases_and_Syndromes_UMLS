@@ -1,3 +1,44 @@
+# 🩺 **Diseases and Syndromes Extraction from UMLS**
+
+## 🔍 **Overview**
+> The **Unified Medical Language System (UMLS)** facilitates the development of computer systems that "understand" the language of biomedicine and health.  
+This repository focuses on extracting and analyzing **diseases and syndromes** from UMLS datasets, leveraging its semantic types and relationships.
+
+---
+
+## 📂 **Code and Dataset**
+### 🗂 **Code Location**:
+- The main code for this project can be found in the file:
+  - 📄 `diseases-and-syndromes-umls.ipynb`
+- You can also access the full project on Kaggle, where the **UMLS dataset** is pre-uploaded.  
+  **(No need to download it again!)**
+
+### 📊 **Final Outputs**:
+- **Filtered Relationships**:
+  - 📝 `filtered_relationships.csv`: Contains relationships specifically for diseases and syndromes.
+- **Enriched Relationships**:
+  - 📝 `enriched_relationships.csv`: Includes relationships enriched with concept names and definitions.
+
+---
+
+## 🎯 **Purpose**
+This project focuses on extracting **diseases** and **syndromes**, specifically targeting UMLS concepts with semantic type `T047`.  
+
+💡 **Applications**:
+- Building and enhancing ontologies.
+- Constructing biomedical knowledge graphs.
+- Preparing structured datasets for machine learning models in biomedical domains.
+
+---
+
+## 🛠 **How to Use**
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/jaaferklila/Diseases_and_Syndromes_UMLS.git
+
+
+
+
 <h2 style="color: darkblue; font-size: 24px; border-bottom: 2px solid gray; padding-bottom: 5px;">
     Purpose of the UMLS
 </h2>
