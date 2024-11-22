@@ -10,14 +10,14 @@ This repository focuses on extracting and analyzing **diseases and syndromes** f
 ### 🗂 **Code Location**:
 - The main code for this project can be found in the file:
   - 📄 `diseases-and-syndromes-umls.ipynb`
-- You can also access the full project on Kaggle [Here](https://kaggle.com]([https://www.kaggle.com/code/klilajaafer/diseases-and-syndromes-umls])), where the **UMLS dataset** is pre-uploaded.  
+- You can also access the full project on Kaggle [Here]([https://kaggle.com](https://www.kaggle.com/code/klilajaafer/diseases-and-syndromes-umls)]), where the **UMLS dataset** is pre-uploaded.  
   **(No need to download it again!)**
 
 ### 📊 **Final Outputs**:
 - **Filtered Relationships**:
   - 📝 `filtered_relationships.csv`: Contains relationships specifically for diseases and syndromes.
 - **Enriched Relationships**:
-  - 📝 `enriched_relationships.csv`: Includes relationships enriched with concept names and definitions.
+  - 📝 `enriched_relationships.csv`: Includes concepts relationships.
 
 ---
 
@@ -45,7 +45,6 @@ This project focuses on extracting **diseases** and **syndromes**, specifically 
 ## 🎯 **Why Focus on the Metathesaurus?**
 For extracting **diseases**, **syndromes**, and their relationships, the Metathesaurus is the most relevant component because:
 - It includes terms from multiple vocabularies like SNOMED, MeSH, and ICD.
-- It connects concepts through meaningful relationships (e.g., "causes" or "associated_with").
 - It provides definitions from various sources, enriching datasets for analysis.
 
 ---
