@@ -10,8 +10,9 @@ This repository focuses on extracting and analyzing **diseases and syndromes** f
 ### 🗂 **Code Location**:
 - The main code for this project can be found in the file:
   - 📄 `diseases-and-syndromes-umls.ipynb`
-- You can also access the full project on Kaggle [**here**](https://www.kaggle.com/code/klilajaafer/diseases-and-syndromes-umls), where the **UMLS dataset** is pre-uploaded. 
-  **(No need to download it again!)**
+- You can access the **UMLS file** [here](https://www.kaggle.com/datasets/klilajaafer/umls-2024aa).  
+No license agreement is required as I have already made it available on Kaggle as a dataset.
+
 
 ### 📊 **Final Outputs**:
 - **Filtered defintion for diseases and syndromes **:
